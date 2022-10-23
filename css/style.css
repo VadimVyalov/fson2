@@ -1,5 +1,7 @@
 :root {
   --col-black: #000000;
+  --black-light: #231f20;
+  --white: #ffffff;
   --gray: #fafafa;
 }
 * {
@@ -42,7 +44,39 @@ body {
   line-height: 1.3594;
   text-align: center;
 }
-
+.blocks {
+  padding: 88px 0 80px;
+}
+.blocks-list {
+  margin-top: 71px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 30px;
+}
+.blocks-list a {
+  color: inherit;
+  text-decoration: none;
+}
+.blocks-list-item {
+  flex: 0 0 calc(50% - 15px);
+}
+.blocks-list-item:hover {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+.blocks-list-full {
+  flex: 0 0 100%;
+  display: flex;
+  color: var(--white);
+  background: var(--black-light);
+}
+.blocks-list-full .block-list-text {
+  padding: 63px 78px 49px;
+}
+.blocks-list-full .block-list-title {
+  margin: 27px 0 60px;
+  font-size: 48px;
+  line-height: 1.2083;
+}
 .block-list-text {
   padding: 48px 48px 50px;
 }
